@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="box">
+<div class="input_box">
     <h1>BMI Calculator</h1>
 
     <label for="height">Height (<i><b>in meters</b></i>)</label>
@@ -20,8 +20,15 @@
     <br>
 
     <button onclick="calculateBMI()" id="calculate">Calculate</button>
+</div>
 
+<div class="result_box">
+    <h1>Result: </h1>
     <p id="result"></p>
+
+    <div class="bar">
+        <div class="fill" id="fill"></div>
+    </div>
 </div>
 
 
