@@ -3,15 +3,21 @@ body {
     background: #eef2f7;
 }
 
-.input_box {
+.box {
     display: block;
     margin: auto;
     background: white;
     padding: 40px;
     border-radius: 20px;
-    width: 320px;
+    width: 300px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.result {
+    display: block;
+    margin: auto;
+    width: 300px;
 }
 
 input {
@@ -41,18 +47,4 @@ button:hover {
 
 button:active {
     transform: scale(0.95);
-}
-
-.bar {
-    width: 30%;
-    height: 10px;
-    background: #ddd;
-    border-radius: 10px;
-}
-
-.fill {
-    height: 100%;
-    width: 50%;
-    background: green;
-    border-radius: 10px;
 }

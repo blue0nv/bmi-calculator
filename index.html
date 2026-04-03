@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="input_box">
+<div class="box">
     <h1>BMI Calculator</h1>
 
     <label for="height">Height (<i><b>in meters</b></i>)</label>
@@ -22,13 +22,31 @@
     <button onclick="calculateBMI()" id="calculate">Calculate</button>
 </div>
 
-<div class="result_box">
-    <h1>Result: </h1>
-    <p id="result"></p>
+<div class="result">
+    <svg width="300" height="180" viewBox="0 0 300 180">
 
-    <div class="bar">
-        <div class="fill" id="fill"></div>
-    </div>
+        <path d="M 20 160 A 130 130 0 0 1 90 60"
+            stroke="#2196f3" stroke-width="20" fill="none"/>
+
+        <path d="M 90 60 A 130 130 0 0 1 150 40"
+            stroke="#4caf50" stroke-width="20" fill="none"/>
+
+        <path d="M 150 40 A 130 130 0 0 1 210 60"
+            stroke="#ffeb3b" stroke-width="20" fill="none"/>
+
+        <path d="M 210 60 A 130 130 0 0 1 280 160"
+            stroke="#f44336" stroke-width="20" fill="none"/>
+
+    <line id="needle"
+        x1="150" y1="160"
+        x2="150" y2="60"
+        stroke="black"
+        stroke-width="4"/>
+
+    <circle cx="150" cy="160" r="6" fill="black"/>
+</svg>
+
+
 </div>
 
 
