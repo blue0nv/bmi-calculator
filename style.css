@@ -15,6 +15,7 @@ body {
 }
 
 .result {
+    visibility: hidden;
     display: block;
     margin: auto;
     width: 300px;
@@ -28,7 +29,7 @@ input {
     margin: 10px;
 }
 
-button {
+#calculate {
     width: 100%;
     padding: 7px;
     margin-top: 15px;
@@ -41,10 +42,10 @@ button {
     transition: 0.3s;
 }
 
-button:hover {
+#calculate:hover {
     opacity: 0.8;
 }
 
-button:active {
+#calculate:active {
     transform: scale(0.95);
 }
